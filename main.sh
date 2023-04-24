@@ -4,7 +4,7 @@ add-apt-repository https://ppa.pika-os.com
 add-apt-repository ppa:pikaos/pika
 add-apt-repository ppa:kubuntu-ppa/backports
 # Clone Upstream
-git clone https://gitlab.com/asus-linux/supergfxctl -b 5.0.1
+git clone https://gitlab.com/asus-linux/supergfxctl -b 5.1.0
 cp -rvf ./debian ./supergfxctl
 cd ./supergfxctl
 
@@ -12,7 +12,7 @@ cd ./supergfxctl
 apt-get build-dep ./ -y
 
 # Build package
-LOGNAME=root dh_make --createorig -y -l -p supergfxctl_5.0.1
+LOGNAME=root dh_make --createorig -y -l -p supergfxctl_5.1.0
 dpkg-buildpackage
 
 # Move the debs to output
