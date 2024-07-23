@@ -31,7 +31,7 @@ jobs:
         if_key_exists: replace
     
     - name: Update APT Cache
-      run: apt-get update
+      run: apt-get update -y
 
     - name: Build Package
       run: ./mainv3.sh
