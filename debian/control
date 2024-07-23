@@ -9,7 +9,7 @@ Homepage: https://gitlab.com/asus-linux/supergfxctl
 Package: supergfxctl
 Section: misc
 Architecture: amd64
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: supergfxctl is a super graphics mode controller for systems with hybrid gpus.
 
 
